@@ -162,7 +162,7 @@ public function getFilteredNews($start_date=0, $end_date=0, $currency = 0)
         $newsItems[] = $item;
     }
 
-    return $newsItems;
+    return array_reverse($newsItems);
 }
 
 
